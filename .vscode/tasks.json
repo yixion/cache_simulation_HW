@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks":[
+        {
+            "label": "Build Project",
+            "type": "shell",
+            "command":"g++",
+            "args":[
+                "main.cpp",
+                "cache.cpp",
+                "-I",
+                "include",
+                "-o",
+                "main"
+            ],
+            "group":{
+                "kind":"build",
+                "isDefault":true
+            }
+        }
+    ]
+}
